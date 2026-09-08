@@ -2,7 +2,7 @@ const formKontak = document.getElementById('formKontak');
 const tombolKirim = document.getElementById('tombolKirim');
 const tombolWA = document.getElementById('tombolWA');
 
-const linkWADefault = 'https://wa.me/6281234567890';
+const linkWADefault = 'https://wa.me/6289524626018';
 
 function ambilDataForm() {
     const nama = document.getElementById('nama').value.trim();
@@ -39,7 +39,7 @@ function perbaruiLinkWA() {
     
     if (data.nama && data.email && data.whatsapp && data.pesan) {
         const pesanWA = buatPesanWA(data);
-        tombolWA.href = `https://wa.me/6281234567890?text=${pesanWA}`;
+        tombolWA.href = `https://wa.me/6289524626018?text=${pesanWA}`;
     } else {
         tombolWA.href = linkWADefault;
     }
