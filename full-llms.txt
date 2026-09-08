@@ -1,0 +1,130 @@
+Bode Creative - Full-LLMs Documentation
+
+# Company Overview
+Bode Creative is a business consultancy and marketing solutions company based in Bali, Indonesia, operating as a division of the Bode Group. The company provides social media, advertising, web, creative production and operational support to businesses seeking to become more visible, more streamlined and more profitable.
+
+# Founder
+Lisa Sibley founded Bode Creative after years of running a luxury villa portfolio in Bali. She identified a gap in the market: businesses had plenty of advice but lacked teams who would execute consistently and stay accountable for results.
+
+# The Gap We Address
+Bali's professional services market has many agencies that post content and consultants who deliver strategy documents. Few take responsibility for what happens between strategy and execution. Most businesses are not short of advice. They are short of people who will actually do the work, consistently, month after month, and stay accountable for whether it produces anything.
+
+# Our Model
+Rather than selling deliverables by the piece, Bode Creative operates as an embedded department: a marketing manager, a photographer and videographer, a web and graphics specialist and a content team, working across a client's business as their own staff would. A business owner does not need twelve reels a month. They need more enquiries, converted better, at a lower cost than they are paying now.
+
+# Services Detail
+
+## Marketing & Social Media
+- Strategy development
+- Daily content production
+- Account administration
+- Paid advertising across Meta platforms (Facebook, Instagram)
+- Paid advertising across Google Ads
+- Performance tracking and optimization
+
+## Digital & Web
+- Website design and build
+- Website maintenance
+- Search engine optimisation (SEO)
+- Analytics setup and monitoring
+- Google Business profile management
+- Technical SEO audits
+
+## Creative Production
+- Photography (in-house production)
+- Videography (in-house production)
+- Graphic design
+- Content creation for all channels
+- No external commissioning needed
+
+## Operational & Business Support
+- Systems design
+- Process documentation
+- Reporting frameworks
+- Consultancy on commercial decisions
+- Revenue-focused strategy
+- Operational efficiency improvements
+
+# Background & Experience
+The Bode Creative team was assembled and trained while running a luxury villa portfolio in Bali. This experience includes:
+- Managing distribution across every major booking platform (Booking.com, Airbnb, Agoda, Expedia, etc.)
+- Building direct-booking systems
+- Handling guest conversion optimization
+- Creating operational reporting frameworks
+- Working to revenue targets rather than impression metrics
+
+This operating background shapes our approach. We have been responsible for revenue rather than impressions, and have worked to the standards of an operating business rather than the deliverables of a client brief.
+
+# Target Industries
+- Hospitality (villas, hotels, resorts)
+- Wellness (retreats, spas, yoga studios)
+- Healthcare (clinics, medical practices)
+- Food and Beverage (restaurants, cafes, bars)
+- Property (real estate, developments)
+
+# Values
+- Consistent: Month after month delivery without fail
+- Accountable: Responsible for results not just output
+- Embedded: Working as your own team would
+- Profitable: Focused on revenue not impressions
+
+# Team Structure
+- Marketing Manager: Oversees strategy and client communication
+- Photographer & Videographer: In-house visual content creation
+- Web & Graphics Specialist: Digital presence and design
+- Content Team: Copywriting, social media management, coordination
+
+# Contact Information
+Email: hello@bodecreative.com
+WhatsApp: +62 812 3456 7890
+Location: Bali, Indonesia
+Availability: Limited capacity to protect service quality
+
+# Social Media Presence
+Instagram: instagram.com/placeholder
+TikTok: tiktok.com/@placeholder
+Facebook: facebook.com/placeholder
+YouTube: youtube.com/@placeholder
+
+# Technical Implementation
+Website built with:
+- Semantic HTML5
+- CSS3 with custom properties (variables)
+- Vanilla JavaScript (no frameworks)
+- Anime.js for animations (text scramble, layout transitions, parallax effects)
+- Responsive design with mobile-first approach
+- Schema.org structured data markup
+- Google Analytics 4 integration
+- Meta Pixel integration
+- Open Graph and Twitter Card meta tags
+- Clean URLs via .htaccess rewrite rules
+- HTTPS enforcement
+- Gzip compression
+- Browser caching headers
+- Security headers (X-Content-Type-Options, X-Frame-Options, X-XSS-Protection)
+
+# Design System
+Colors:
+- Main Dark: #17160f
+- Main Bright: #f5f2e9
+- Accent: #ab3a20
+
+Typography:
+- Headings: Poppins (Black 900, Semi Bold 600)
+- Body: Space Grotesk (Regular 400, Medium 500)
+
+Design Principles:
+- No rounded borders (max 3px, min 1px straight edges)
+- Generous breathing space throughout
+- Single letters as decorative elements used sparingly
+- Each page has unique layout while maintaining identity
+- Highly visual and aesthetic presentation
+- No bullet points or numbered lists in content
+- No em-dashes in copy
+
+# Content Philosophy
+- De-AI copy: No overused cadences, formulas, triads
+- Direct and accountable language
+- Focus on outcomes over outputs
+- No marketing fluff or buzzwords
+- Clear value propositions

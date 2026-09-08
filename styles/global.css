@@ -1,11 +1,4 @@
-:root {
-    --warna-gelap: #17160f;
-    --warna-terang: #f5f2e9;
-    --warna-aksen: #ab3a20;
-    --jarak-besar: clamp(4rem, 8vw, 8rem);
-    --jarak-sedang: clamp(2rem, 4vw, 4rem);
-    --jarak-kecil: clamp(1rem, 2vw, 2rem);
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;900&display=swap');
 
 * {
     margin: 0;
@@ -13,283 +6,98 @@
     box-sizing: border-box;
 }
 
+:root {
+    --warna-gelap: #17160f;
+    --warna-terang: #f5f2e9;
+    --warna-accent: #ab3a20;
+    --font-judul: 'Poppins', sans-serif;
+    --font-tubuh: 'Poppins', sans-serif;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: var(--font-tubuh);
     background-color: var(--warna-terang);
     color: var(--warna-gelap);
-    line-height: 1.6;
     overflow-x: hidden;
+    line-height: 1.4;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 500;
-    line-height: 1.2;
+    font-family: var(--font-judul);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+}
+
+p {
+    font-weight: 600;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-    transition: opacity 0.3s ease;
-}
-
-a:hover {
-    opacity: 0.7;
+    cursor: pointer;
 }
 
 img {
     max-width: 100%;
-    height: auto;
     display: block;
+    object-fit: cover;
 }
 
-.kepala-utama {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+.bordes-tipis {
+    border: 1px solid var(--warna-gelap);
+}
+
+.bordes-tebal {
+    border: 3px solid var(--warna-gelap);
+}
+
+.bordes-accent {
+    border: 3px solid var(--warna-accent);
+}
+
+.tanpa-radius {
+    border-radius: 0;
+}
+
+.logowadah {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: var(--jarak-kecil) var(--jarak-sedang);
-    background-color: var(--warna-terang);
-    z-index: 1000;
+    gap: 8px;
 }
 
-.wadah-logo {
-    display: flex;
-    align-items: center;
+.logogambar {
+    height: 40px;
+    width: auto;
 }
 
-.tautan-logo {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.logo-bode {
-    width: 48px;
-    height: 48px;
-    flex-shrink: 0;
-}
-
-.teks-creativo {
+.logoteks {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 0.875rem;
-    letter-spacing: 0.1em;
+    font-size: 40px;
     color: var(--warna-gelap);
-}
-
-.teks-pisah {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 500;
-    font-size: 0.875rem;
-    letter-spacing: 0.05em;
-    color: var(--warna-gelap);
-}
-
-.navigasi-utama {
-    display: flex;
-    gap: var(--jarak-sedang);
-}
-
-.item-navigasi {
-    font-size: 0.875rem;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    position: relative;
-}
-
-.item-navigasi::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background-color: var(--warna-gelap);
-    transition: width 0.3s ease;
-}
-
-.item-navigasi.aktif::after,
-.item-navigasi:hover::after {
-    width: 100%;
-}
-
-.tombol-menu {
-    display: none;
-    flex-direction: column;
-    gap: 6px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 8px;
-}
-
-.garis-menu {
-    width: 24px;
-    height: 1px;
-    background-color: var(--warna-gelap);
-    transition: transform 0.3s ease;
-}
-
-.konten-utama {
-    min-height: 100vh;
-    padding-top: 80px;
-}
-
-.elemen-dekoratif {
-    font-family: 'Cormorant Garamond', serif;
-    color: var(--warna-aksen);
-    opacity: 0.3;
-    position: absolute;
-    pointer-events: none;
-}
-
-.huruf-besar {
-    font-size: clamp(8rem, 20vw, 20rem);
-    font-weight: 400;
     line-height: 1;
 }
 
-.huruf-kecil {
-    font-size: clamp(4rem, 10vw, 10rem);
-    font-weight: 400;
+.logopemisah {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--warna-gelap);
     line-height: 1;
-}
-
-.judul-bagian {
-    font-size: clamp(2rem, 4vw, 3rem);
-    margin-bottom: var(--jarak-sedang);
-}
-
-.tombol-utama {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: var(--warna-gelap);
-    color: var(--warna-terang);
-    font-size: 0.875rem;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    border: 1px solid var(--warna-gelap);
-    transition: all 0.3s ease;
-}
-
-.tombol-utama:hover {
-    background-color: transparent;
-    color: var(--warna-gelap);
-    opacity: 1;
-}
-
-.tombol-sekunder {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: transparent;
-    color: var(--warna-gelap);
-    font-size: 0.875rem;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    border: 1px solid var(--warna-gelap);
-    transition: all 0.3s ease;
-}
-
-.tombol-sekunder:hover {
-    background-color: var(--warna-gelap);
-    color: var(--warna-terang);
-    opacity: 1;
-}
-
-.wadah-sosial {
-    position: fixed;
-    right: var(--jarak-kecil);
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: var(--jarak-kecil);
-    z-index: 100;
-}
-
-.tautan-sosial {
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: var(--warna-gelap);
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    padding: 0.5rem;
-    border: 1px solid transparent;
-    transition: all 0.3s ease;
-}
-
-.tautan-sosial:hover {
-    border-color: var(--warna-aksen);
-    color: var(--warna-aksen);
-    opacity: 1;
-}
-
-.bagian-judul-halaman {
-    min-height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: var(--jarak-besar) var(--jarak-sedang);
-    position: relative;
-}
-
-.judul-halaman {
-    font-size: clamp(3rem, 8vw, 6rem);
-    margin-bottom: var(--jarak-kecil);
-}
-
-.subjudul-halaman {
-    font-size: clamp(1rem, 2vw, 1.25rem);
-    max-width: 600px;
-    opacity: 0.8;
 }
 
 @media (max-width: 768px) {
-    .navigasi-utama {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 100%;
-        height: 100vh;
-        background-color: var(--warna-terang);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: var(--jarak-sedang);
-        transition: right 0.3s ease;
+    .logoteks, .logopemisah {
+        font-size: 24px;
     }
-
-    .navigasi-utama.aktif {
-        right: 0;
-    }
-
-    .tombol-menu {
-        display: flex;
-        z-index: 1001;
-    }
-
-    .item-navigasi {
-        font-size: 1.25rem;
-    }
-
-    .wadah-sosial {
-        position: static;
-        transform: none;
-        flex-direction: row;
-        justify-content: center;
-        padding: var(--jarak-kecil);
-        margin-top: var(--jarak-sedang);
-    }
-
-    .tautan-sosial {
-        writing-mode: horizontal-tb;
+    
+    .logogambar {
+        height: 28px;
     }
 }

@@ -1,0 +1,36 @@
+Bode Creative - Bali Marketing & Operations Team
+
+Company: Bode Creative (division of Bode Group)
+Location: Bali, Indonesia
+Founded: By Lisa Sibley
+
+Mission: Provide businesses with a complete in-house marketing and operations team without the overhead of building one directly.
+
+Services:
+- Marketing & Social Media: Strategy, daily content production, account administration, paid advertising across Meta and Google
+- Digital & Web: Website design, build, maintenance, SEO, analytics, Google Business management
+- Creative Production: Photography, videography, design (produced in-house)
+- Operational & Business Support: Systems design, reporting, consultancy on commercial decisions
+
+Key Differentiator: Embedded team model that stays accountable for results, not just deliverables. Works as client's own staff would.
+
+Background: Team assembled and trained while running luxury villa portfolio in Bali, managing distribution across booking platforms, direct-booking systems, guest conversion, operational reporting.
+
+Target Industries: Hospitality, wellness, healthcare, food and beverage, property
+
+Contact: hello@bodecreative.com
+WhatsApp: +62 812 3456 7890
+
+Social Media:
+- Instagram: instagram.com/placeholder
+- TikTok: tiktok.com/@placeholder
+- Facebook: facebook.com/placeholder
+- YouTube: youtube.com/@placeholder
+
+Technical Stack:
+- HTML5, CSS3, Vanilla JavaScript
+- Anime.js for animations
+- Poppins (headings), Space Grotesk (body) fonts
+- Responsive design
+- Schema.org markup
+- Google Analytics, Meta Pixel integration

@@ -1,86 +1,120 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const tombolMenu = document.querySelector('.tombol-menu');
-    const navigasiUtama = document.querySelector('.navigasi-utama');
+const introGrid = document.querySelector('.lapisan-gambar');
+const kotakGambar = document.querySelectorAll('.kotak-gambar');
+
+let posisiSekarang = [0, 1, 2, 3];
+let posisiAcak = [];
+
+function acakPosisi() {
+    posisiAcak = [...posisiSekarang].sort(() => Math.random() - 0.5);
+}
+
+function shuffleGrid() {
+    acakPosisi();
     
-    if (tombolMenu && navigasiUtama) {
-        tombolMenu.addEventListener('click', function() {
-            navigasiUtama.classList.toggle('aktif');
-            this.classList.toggle('aktif');
-        });
-    }
-    
-    anime({
-        targets: '.judul-pahlawan .baris-judul',
-        translateY: [50, 0],
-        opacity: [0, 1],
-        delay: anime.stagger(200),
-        duration: 1200,
-        easing: 'easeOutExpo'
-    });
-    
-    anime({
-        targets: '.subjudul-pahlawan',
-        translateY: [30, 0],
-        opacity: [0, 1],
-        delay: 800,
-        duration: 1000,
-        easing: 'easeOutExpo'
-    });
-    
-    anime({
-        targets: '.wadah-tombol-pahlawan',
-        translateY: [20, 0],
-        opacity: [0, 1],
-        delay: 1200,
+    const animasi = anime({
+        targets: '.kotak-gambar',
+        scale: [1, 0.95],
         duration: 800,
-        easing: 'easeOutExpo'
+        easing: 'easeInOutQuad',
+        complete: function() {
+            posisiSekarang.forEach((pos, index) => {
+                kotakGambar[index].style.order = posisiAcak.indexOf(pos);
+            });
+            
+            anime({
+                targets: '.kotak-gambar',
+                scale: [0.95, 1],
+                duration: 800,
+                easing: 'easeInOutQuad'
+            });
+        }
     });
+}
+
+setInterval(shuffleGrid, 4000);
+
+const manifestoCards = document.querySelectorAll('.kartu-manifesto');
+
+anime({
+    targets: '.kartu-manifesto',
+    translateX: function(el) {
+        return anime.random(0, 100);
+    },
+    delay: anime.stagger(200),
+    duration: 2000,
+    direction: 'alternate',
+    easing: 'easeInOutQuad',
+    loop: true
+});
+
+window.addEventListener('scroll', function() {
+    const scrollY = window.scrollY;
     
-    const kartuGap = document.querySelectorAll('.kartu-gap');
-    kartuGap.forEach((kartu, index) => {
+    manifestoCards.forEach((card, index) => {
+        const kecepatan = parseFloat(card.getAttribute('data-kecepatan'));
+        card.style.transform = `translateX(-${scrollY * kecepatan}px)`;
+    });
+});
+
+const ctaSection = document.getElementById('ctaKerja');
+const teksKerja = document.querySelector('.teks-kerja');
+
+const observerCta = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            scrambleText();
+        }
+    });
+}, { threshold: 0.5 });
+
+observerCta.observe(ctaSection);
+
+function scrambleText() {
+    const huruf = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let iterasi = 0;
+    const teksAsli = "Let's Work";
+    
+    const interval = setInterval(() => {
+        teksKerja.textContent = teksAsli
+            .split('')
+            .map((hurufAsli, index) => {
+                if (index < iterasi) {
+                    return hurufAsli;
+                }
+                return huruf[Math.floor(Math.random() * 26)];
+            })
+            .join('');
+        
+        iterasi += 1/3;
+        
+        if (iterasi >= teksAsli.length) {
+            clearInterval(interval);
+        }
+    }, 30);
+}
+
+ctaSection.addEventListener('click', () => {
+    window.location.href = '/contact';
+});
+
+const blokLayanan = document.querySelectorAll('.blok-layanan');
+
+blokLayanan.forEach(blok => {
+    blok.addEventListener('mouseenter', () => {
         anime({
-            targets: kartu,
-            translateY: [40, 0],
-            opacity: [0, 1],
-            delay: index * 200,
-            duration: 1000,
-            easing: 'easeOutExpo'
+            targets: blok.querySelector('.konten-layanan'),
+            opacity: 1,
+            duration: 400,
+            easing: 'easeOutQuad'
         });
     });
     
-    const kartuLayanan = document.querySelectorAll('.kartu-layanan-ikhtisar');
-    kartuLayanan.forEach((kartu, index) => {
+    blok.addEventListener('mouseleave', () => {
         anime({
-            targets: kartu,
-            translateY: [30, 0],
-            opacity: [0, 1],
-            delay: index * 150,
-            duration: 800,
-            easing: 'easeOutExpo'
-        });
-    });
-    
-    const statistikItems = document.querySelectorAll('.statistik-item');
-    statistikItems.forEach((item, index) => {
-        anime({
-            targets: item,
-            scale: [0.9, 1],
-            opacity: [0, 1],
-            delay: index * 100,
-            duration: 600,
-            easing: 'easeOutExpo'
-        });
-    });
-    
-    const elemenHuruf = document.querySelectorAll('.elemen-dekoratif');
-    elemenHuruf.forEach(elemen => {
-        anime({
-            targets: elemen,
-            opacity: [0, 0.3],
-            duration: 2000,
-            easing: 'linear',
-            direction: 'alternate',
-            loop: true
+            targets: blok.querySelector('.konten-layanan'),
+            opacity: 0,
+            duration: 400,
+            easing: 'easeInQuad'
         });
     });
 });
