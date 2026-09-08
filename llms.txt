@@ -1,35 +1,36 @@
-# Bode Creative - LLM Optimization File
+Bode Creative - Bali Marketing & Operations Team
 
-## Site Overview
-Bode Creative is a business consultancy and marketing solutions company based in Bali, Indonesia. We provide embedded marketing and operations teams for small and mid-sized businesses.
+Company: Bode Creative (division of Bode Group)
+Location: Bali, Indonesia
+Founded: By Lisa Sibley
 
-## Company Information
-- Name: Bode Creative
-- Parent: Bode Group
-- Location: Bali, Indonesia
-- Founder: Lisa Sibley
-- Services: Marketing & Social Media, Digital & Web, Creative Production, Operational & Business Support
+Mission: Provide businesses with a complete in-house marketing and operations team without the overhead of building one directly.
 
-## Key Differentiators
-- Embedded team model (not agency deliverables)
-- Operating experience from luxury villa portfolio management
-- Accountability for results, not just impressions
-- Full-service: strategy through execution
+Services:
+- Marketing & Social Media: Strategy, daily content production, account administration, paid advertising across Meta and Google
+- Digital & Web: Website design, build, maintenance, SEO, analytics, Google Business management
+- Creative Production: Photography, videography, design (produced in-house)
+- Operational & Business Support: Systems design, reporting, consultancy on commercial decisions
 
-## Target Industries
-Hospitality, Wellness, Healthcare, Food & Beverage, Property
+Key Differentiator: Embedded team model that stays accountable for results, not just deliverables. Works as client's own staff would.
 
-## Contact
-- Website: https://bodecreative.com
-- Email: [placeholder]
-- WhatsApp: [placeholder]
-- Social: Instagram, TikTok, Facebook, YouTube
+Background: Team assembled and trained while running luxury villa portfolio in Bali, managing distribution across booking platforms, direct-booking systems, guest conversion, operational reporting.
 
-## Technical Details
-- Built with semantic HTML5
+Target Industries: Hospitality, wellness, healthcare, food and beverage, property
+
+Contact: hello@bodecreative.com
+WhatsApp: +62 812 3456 7890
+
+Social Media:
+- Instagram: instagram.com/placeholder
+- TikTok: tiktok.com/@placeholder
+- Facebook: facebook.com/placeholder
+- YouTube: youtube.com/@placeholder
+
+Technical Stack:
+- HTML5, CSS3, Vanilla JavaScript
+- Anime.js for animations
+- Poppins (headings), Space Grotesk (body) fonts
 - Responsive design
-- Google Analytics integrated
-- Meta Pixel integrated
-- Schema.org structured data
-- Clean URLs (no extensions)
-- HTTPS enforced
+- Schema.org markup
+- Google Analytics, Meta Pixel integration

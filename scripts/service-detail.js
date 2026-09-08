@@ -1,81 +1,107 @@
-const animasiJudul = document.querySelector('.judul-layanan-utama');
-const animasiSubjudul = document.querySelector('.subjudul-layanan');
-const animasiDaftar = document.querySelectorAll('.item-daftar');
-const animasiGambar = document.querySelector('.gambar-layanan');
-const animasiPendekatan = document.querySelector('.bagian-pendekatan');
+const kataTersebar = document.querySelectorAll('.kata-tersebar');
 
-if (animasiJudul) {
-    anime({
-        targets: animasiJudul,
-        opacity: [0, 1],
-        translateY: [50, 0],
-        duration: 1200,
-        easing: 'easeOutExpo',
-        delay: 200
-    });
-}
+kataTersebar.forEach((kata, index) => {
+    const tx = kata.getAttribute('data-x') || 0;
+    const ty = kata.getAttribute('data-y') || 0;
+    const r = Math.random() * 360 - 180;
+    
+    kata.style.setProperty('--tx', tx + 'px');
+    kata.style.setProperty('--ty', ty + 'px');
+    kata.style.setProperty('--r', r + 'deg');
+});
 
-if (animasiSubjudul) {
-    anime({
-        targets: animasiSubjudul,
-        opacity: [0, 1],
-        translateY: [30, 0],
-        duration: 1200,
-        easing: 'easeOutExpo',
-        delay: 400
-    });
-}
+anime({
+    targets: '.kata-tersebar',
+    opacity: [0, 1],
+    translateX: function(el) {
+        const tx = el.getAttribute('data-x') || 0;
+        return [tx * 3, tx];
+    },
+    translateY: function(el) {
+        const ty = el.getAttribute('data-y') || 0;
+        return [ty * 3, ty];
+    },
+    rotate: function(el) {
+        const r = Math.random() * 360 - 180;
+        return [r, 0];
+    },
+    scale: [0.5, 1],
+    delay: anime.stagger(100),
+    duration: 1500,
+    easing: 'easeOutExpo'
+});
 
-if (animasiDaftar.length > 0) {
+anime({
+    targets: '.judul-satu-kalimat',
+    opacity: [0, 1],
+    translateY: [50, 0],
+    delay: 800,
+    duration: 1200,
+    easing: 'easeOutQuad'
+});
+
+const blokGambar = document.querySelectorAll('.blok-gambar');
+const blokTeks = document.querySelectorAll('.blok-teks');
+
+blokGambar.forEach((blok, index) => {
     anime({
-        targets: animasiDaftar,
+        targets: blok,
         opacity: [0, 1],
-        translateX: [-30, 0],
+        translateX: index % 2 === 0 ? [-100, 0] : [100, 0],
+        delay: index * 200,
         duration: 1000,
-        easing: 'easeOutExpo',
-        delay: anime.stagger(150, { start: 600 })
+        easing: 'easeOutQuad'
     });
-}
+});
 
-if (animasiGambar) {
+blokTeks.forEach((blok, index) => {
     anime({
-        targets: animasiGambar,
+        targets: blok,
         opacity: [0, 1],
-        scale: [0.95, 1],
-        duration: 1400,
-        easing: 'easeOutExpo',
-        delay: 300
+        translateX: index % 2 === 0 ? [100, 0] : [-100, 0],
+        delay: index * 200 + 100,
+        duration: 1000,
+        easing: 'easeOutQuad'
     });
-}
+});
 
-const pengamatPendekatan = new IntersectionObserver((entri) => {
-    entri.forEach(entri => {
-        if (entri.isIntersecting) {
-            const teksPendekatan = entri.target.querySelectorAll('.teks-pendekatan');
-            anime({
-                targets: teksPendekatan,
-                opacity: [0, 1],
-                translateY: [40, 0],
-                duration: 1200,
-                easing: 'easeOutExpo',
-                delay: anime.stagger(200)
-            });
-            pengamatPendekatan.unobserve(entri.target);
-        }
-    });
-}, { threshold: 0.2 });
+const labelPlatform = document.querySelectorAll('.label-platform');
 
-if (animasiPendekatan) {
-    pengamatPendekatan.observe(animasiPendekatan);
-}
+anime({
+    targets: '.label-platform',
+    opacity: [0, 1],
+    scale: [0, 1],
+    delay: anime.stagger(150),
+    duration: 800,
+    easing: 'spring(1, 80, 10, 0)'
+});
 
-const elemenDekoratif = document.querySelectorAll('.elemen-dekoratif');
-elemenDekoratif.forEach(elemen => {
-    anime({
-        targets: elemen,
-        opacity: [0, 0.3],
-        duration: 2000,
-        easing: 'easeOutExpo',
-        delay: Math.random() * 500
-    });
+anime({
+    targets: '.bentuk-tengah',
+    rotate: 360,
+    duration: 20000,
+    easing: 'linear',
+    loop: true
+});
+
+const ctaKiri = document.querySelector('.wadah-belah-kiri h2');
+
+anime({
+    targets: ctaKiri,
+    opacity: [0, 1],
+    translateX: [-50, 0],
+    delay: 500,
+    duration: 1000,
+    easing: 'easeOutQuad'
+});
+
+const tautanKontak = document.querySelector('.tautan-ke-kontak');
+
+anime({
+    targets: tautanKontak,
+    opacity: [0, 1],
+    translateX: [50, 0],
+    delay: 700,
+    duration: 1000,
+    easing: 'easeOutQuad'
 });

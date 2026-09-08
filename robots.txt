@@ -1,9 +1,9 @@
 User-agent: *
-Disallow: /assets/README.txt
-Disallow: /.git/
-Disallow: /.htaccess
-Disallow: /submit.php
+Allow: /
 
 Sitemap: https://bodecreative.com/sitemap.xml
 
-Crawl-delay: 1
+Disallow: /assets/
+Disallow: /styles/
+Disallow: /scripts/
+Disallow: /submit.php

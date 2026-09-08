@@ -4,38 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Bode Creative Bali</title>
-    <meta name="description" content="Bode Creative is a business consultancy and marketing solutions company based in Bali, Indonesia. Operating as a division of the Bode Group.">
-    <meta name="keywords" content="about Bode Creative, Bali marketing agency, Lisa Sibley, Bode Group, marketing team Bali">
+    <meta name="description" content="Bode Creative is a business consultancy and marketing solutions company based in Bali, Indonesia.">
+    <link rel="canonical" href="https://bodecreative.com/about">
     
-    <meta property="og:title" content="About | Bode Creative Bali">
-    <meta property="og:description" content="Built on operating experience, not agency theory. A team responsible for revenue rather than impressions.">
+    <meta property="og:title" content="About | Bode Creative">
+    <meta property="og:description" content="Business consultancy and marketing solutions company based in Bali.">
+    <meta property="og:image" content="assets/og-image.jpg">
+    <meta property="og:url" content="https://bodecreative.com/about">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://bodecreative.com/about.html">
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/about.css">
     
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Bode Creative",
-        "url": "https://bodecreative.com",
-        "logo": "https://bodecreative.com/assets/logo.png",
-        "description": "Business consultancy and marketing solutions company based in Bali, Indonesia",
-        "parentOrganization": {
-            "@type": "Organization",
-            "name": "Bode Group"
-        },
-        "founder": {
-            "@type": "Person",
-            "name": "Lisa Sibley"
-        },
-        "areaServed": {
-            "@type": "Place",
-            "name": "Bali, Indonesia"
-        }
+        "url": "https://bodecreative.com/",
+        "logo": "https://bodecreative.com/assets/Bode logo.webp"
     }
     </script>
     
@@ -48,155 +37,141 @@
     </script>
     
     <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'PIXEL_ID');
         fbq('track', 'PageView');
     </script>
-    
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/about.css">
 </head>
 <body>
-    <header class="kepala-utama">
-        <div class="wadah-logo">
-            <a href="index.html" class="tautan-logo">
-                <svg class="logo-bode" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="60" height="60" fill="#17160f"/>
-                    <text x="30" y="38" text-anchor="middle" fill="#f5f2e9" font-size="24" font-weight="600" font-family="Cormorant Garamond, serif">B</text>
-                </svg>
-                <span class="teks-pisah">| CRV</span>
-            </a>
-        </div>
-        <nav class="navigasi-utama">
-            <a href="/" class="item-navigasi">Home</a>
+    <nav class="kepala-navigasi-about">
+        <div class="wadah-menu">
+            <a href="/" class="item-menu">Home</a>
             <div class="wadah-dropdown">
-                <span class="item-navigasi tautan-dropdown">Best at</span>
-                <div class="daftar-dropdown">
+                <span class="tombol-dropdown">Best at:</span>
+                <div class="isi-dropdown">
                     <a href="/best-at/marketing-social-media" class="item-dropdown">Marketing & Social Media</a>
                     <a href="/best-at/digital-web" class="item-dropdown">Digital & Web</a>
                     <a href="/best-at/creative-production" class="item-dropdown">Creative Production</a>
                     <a href="/best-at/operational-business-support" class="item-dropdown">Operational & Business Support</a>
                 </div>
             </div>
-            <a href="/about" class="item-navigasi aktif">About</a>
-            <a href="/contact" class="item-navigasi">Contact</a>
-        </nav>
-        <button class="tombol-menu" aria-label="Menu">
-            <span class="garis-menu"></span>
-            <span class="garis-menu"></span>
-            <span class="garis-menu"></span>
-        </button>
-    </header>
+            <a href="/about" class="item-menu aktif">About</a>
+            <a href="/contact" class="item-menu">Contact</a>
+        </div>
+    </nav>
 
-    <main class="konten-utama">
-        <section class="bagian-judul-halaman">
-            <div class="elemen-dekoratif huruf-besar">A</div>
-            <h1 class="judul-halaman">About</h1>
-            <p class="subjudul-halaman">Built on operating experience, not agency theory</p>
-        </section>
+    <section class="bagian-bio">
+        <div class="wadah-kiri-bio">
+            <p class="fragmen-teks">Lisa Sibley founded Bode Creative</p>
+            <p class="fragmen-teks">after years of running</p>
+            <p class="fragmen-teks">a luxury villa portfolio in Bali</p>
+            <p class="fragmen-teks">The gap was clear</p>
+            <p class="fragmen-teks">Too much advice</p>
+            <p class="fragmen-teks">Not enough execution</p>
+        </div>
+        <div class="wadah-kanan-bio">
+            <img src="assets/villa rosita morning vibes with american breakfast set with coffee and an open book aesthetically imortalized at villa for wedding bali.webp" alt="Bali villa lifestyle" class="gambar-bio">
+        </div>
+    </section>
 
-        <section class="bagian-cerita">
-            <div class="wadah-konten-cerita">
-                <div class="elemen-dekoratif huruf-kecil">b</div>
-                <div class="grid-cerita">
-                    <div class="kolom-teks">
-                        <p class="paragraf-besar">Bode Creative is a new business consultancy and marketing solutions company, launched in Bali as a division of the Bode Group.</p>
-                        <p class="paragraf">We offer small and mid-sized businesses something the local market rarely provides: a complete in-house marketing and operations team, available without the cost, recruitment risk or management burden of employing one directly.</p>
-                        <p class="paragraf">Services span social media creation, administration and advertising strategy through to operational support, marketing direction and ongoing business guidance.</p>
-                    </div>
-                    <div class="kolom-gambar">
-                        <div class="wadah-gambar-tempat besar">
-                            <img src="assets/about-hero-placeholder.jpg" alt="Bode Creative team in Bali" class="gambar-cerita">
-                        </div>
-                    </div>
+    <section class="bagian-bode-group">
+        <div class="wadah-border-tebal">
+            <div class="watermark-g">G</div>
+            <h2 class="judul-group">Part of the Bode Group</h2>
+            <p class="teks-group">Bode Creative was assembled and trained while running a luxury villa portfolio in Bali. We managed distribution across every major booking platform, built direct-booking systems, and handled guest conversion and operational reporting. This operating experience shapes everything we do.</p>
+        </div>
+    </section>
+
+    <section class="bagian-tim">
+        <div class="wadah-daftar-peran">
+            <div class="baris-peran" data-bentuk="kotak">
+                <span class="label-peran">Marketing Manager</span>
+                <div class="bentuk-abstrak"></div>
+            </div>
+            <div class="baris-peran" data-bentuk="lingkaran">
+                <span class="label-peran">Photographer & Videographer</span>
+                <div class="bentuk-abstrak"></div>
+            </div>
+            <div class="baris-peran" data-bentuk="segitiga">
+                <span class="label-peran">Web & Graphics Specialist</span>
+                <div class="bentuk-abstrak"></div>
+            </div>
+            <div class="baris-peran" data-bentuk="garis">
+                <span class="label-peran">Content Team</span>
+                <div class="bentuk-abstrak"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bagian-nilai">
+        <div class="grid-nilai">
+            <div class="kotak-nilai" data-nilai="consistent">
+                <div class="sisi-depan">
+                    <span class="teks-nilai">Consistent</span>
+                </div>
+                <div class="sisi-belakang">
+                    <span class="teks-definisi">Month after month delivery without fail</span>
                 </div>
             </div>
-        </section>
-
-        <section class="bagian-kutipan">
-            <div class="wadah-kutipan">
-                <div class="elemen-dekoratif huruf-besar">Q</div>
-                <blockquote class="kutipan-besar">
-                    <p class="teks-kutipan">Most businesses here are not short of advice. They are short of people who will actually do the work, consistently, month after month, and stay accountable for whether it produces anything.</p>
-                </blockquote>
-                <cite class="penulis-kutipan">Lisa Sibley, Founder of Bode Creative</cite>
-            </div>
-        </section>
-
-        <section class="bagian-model">
-            <div class="wadah-konten-model">
-                <div class="elemen-dekoratif huruf-kecil">m</div>
-                <h2 class="judul-bagian">Why this model exists</h2>
-                <div class="grid-model">
-                    <div class="kartu-model">
-                        <p class="teks-kartu-model">Bali's professional services market is well supplied with agencies that post content, and with consultants who deliver strategy documents. Far fewer take responsibility for what happens in between.</p>
-                    </div>
-                    <div class="kartu-model sorotan">
-                        <p class="teks-kartu-model">A business owner does not need twelve reels a month. They need more enquiries, converted better, at a lower cost than they are paying now. That is a different job, and it needs a different kind of team.</p>
-                    </div>
+            <div class="kotak-nilai" data-nilai="accountable">
+                <div class="sisi-depan">
+                    <span class="teks-nilai">Accountable</span>
+                </div>
+                <div class="sisi-belakang">
+                    <span class="teks-definisi">Responsible for results not just output</span>
                 </div>
             </div>
-        </section>
-
-        <section class="bagian-tim">
-            <div class="wadah-konten-tim">
-                <div class="elemen-dekoratif huruf-kecil">t</div>
-                <h2 class="judul-bagian">The embedded department</h2>
-                <p class="teks-tim">Rather than selling deliverables by the piece, Bode Creative operates as an embedded department:</p>
-                <div class="grid-tim">
-                    <div class="kartu-tim">
-                        <span class="nomor-tim">01</span>
-                        <h3 class="judul-peran">Marketing Manager</h3>
-                        <p class="deskripsi-peran">Strategic oversight and accountability</p>
-                    </div>
-                    <div class="kartu-tim">
-                        <span class="nomor-tim">02</span>
-                        <h3 class="judul-peran">Photographer & Videographer</h3>
-                        <p class="deskripsi-peran">In-house creative production</p>
-                    </div>
-                    <div class="kartu-tim">
-                        <span class="nomor-tim">03</span>
-                        <h3 class="judul-peran">Web & Graphics Specialist</h3>
-                        <p class="deskripsi-peran">Digital presence and design</p>
-                    </div>
-                    <div class="kartu-tim">
-                        <span class="nomor-tim">04</span>
-                        <h3 class="judul-peran">Content Team</h3>
-                        <p class="deskripsi-peran">Daily execution and administration</p>
-                    </div>
+            <div class="kotak-nilai" data-nilai="embedded">
+                <div class="sisi-depan">
+                    <span class="teks-nilai">Embedded</span>
+                </div>
+                <div class="sisi-belakang">
+                    <span class="teks-definisi">Working as your own team would</span>
                 </div>
             </div>
-        </section>
-
-        <section class="bagian-latar">
-            <div class="wadah-konten-latar">
-                <div class="elemen-dekoratif huruf-besar">L</div>
-                <h2 class="judul-bagian">Our background</h2>
-                <p class="teks-latar">Our team was assembled and trained while running a luxury villa portfolio in Bali. We managed distribution across every major booking platform, built direct-booking systems, and handled guest conversion and operational reporting.</p>
-                <p class="teks-latar">That background shapes our approach. We have been responsible for revenue rather than impressions, and have worked to the standards of an operating business rather than the deliverables of a client brief.</p>
-                <div class="wadah-industri">
-                    <span class="chip-industri">Hospitality</span>
-                    <span class="chip-industri">Wellness</span>
-                    <span class="chip-industri">Healthcare</span>
-                    <span class="chip-industri">Food & Beverage</span>
-                    <span class="chip-industri">Property</span>
+            <div class="kotak-nilai" data-nilai="profitable">
+                <div class="sisi-depan">
+                    <span class="teks-nilai">Profitable</span>
+                </div>
+                <div class="sisi-belakang">
+                    <span class="teks-definisi">Focused on revenue not impressions</span>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="bagian-info-perusahaan">
-            <div class="wadah-konten-info">
-                <div class="elemen-dekoratif huruf-kecil">i</div>
-                <h2 class="judul-bagian">About Bode Creative</h2>
-                <p class="teks-info">Bode Creative is a business consultancy and marketing solutions company based in Bali, Indonesia, operating as a division of the Bode Group. The company provides social media, advertising, web, creative production and operational support to businesses seeking to become more visible, more streamlined and more profitable.</p>
+    <section class="bagian-cta-about">
+        <h2 class="teks-cta-about">Meet the Team</h2>
+        <div class="panah-animasi">→</div>
+    </section>
+
+    <footer class="kaki-about">
+        <div class="wadah-kaki">
+            <div class="logowadah">
+                <img src="assets/Bode logo.webp" alt="Bode Creative" class="logogambar">
+                <span class="logopemisah">|</span>
+                <span class="logoteks">CRV</span>
             </div>
-        </section>
-    </main>
-
-    <div class="wadah-sosial">
-        <a href="https://instagram.com/bodecreative" target="_blank" rel="noopener" class="tautan-sosial" aria-label="Instagram">IG</a>
-        <a href="https://tiktok.com/@bodecreative" target="_blank" rel="noopener" class="tautan-sosial" aria-label="TikTok">TT</a>
-        <a href="https://facebook.com/bodecreative" target="_blank" rel="noopener" class="tautan-sosial" aria-label="Facebook">FB</a>
-        <a href="https://youtube.com/@bodecreative" target="_blank" rel="noopener" class="tautan-sosial" aria-label="YouTube">YT</a>
-    </div>
+            <div class="wadah-link-kaki">
+                <a href="/" class="link-kaki">Home</a>
+                <a href="/about" class="link-kaki">About</a>
+                <a href="/contact" class="link-kaki">Contact</a>
+            </div>
+            <div class="wadah-sosial">
+                <a href="https://instagram.com/placeholder" target="_blank" rel="noopener" class="link-sosial">Instagram</a>
+                <a href="https://tiktok.com/@placeholder" target="_blank" rel="noopener" class="link-sosial">TikTok</a>
+                <a href="https://facebook.com/placeholder" target="_blank" rel="noopener" class="link-sosial">Facebook</a>
+                <a href="https://youtube.com/@placeholder" target="_blank" rel="noopener" class="link-sosial">YouTube</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="scripts/about.js"></script>
