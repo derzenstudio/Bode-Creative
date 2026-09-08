@@ -1,0 +1,35 @@
+# Bode Creative - LLM Optimization File
+
+## Site Overview
+Bode Creative is a business consultancy and marketing solutions company based in Bali, Indonesia. We provide embedded marketing and operations teams for small and mid-sized businesses.
+
+## Company Information
+- Name: Bode Creative
+- Parent: Bode Group
+- Location: Bali, Indonesia
+- Founder: Lisa Sibley
+- Services: Marketing & Social Media, Digital & Web, Creative Production, Operational & Business Support
+
+## Key Differentiators
+- Embedded team model (not agency deliverables)
+- Operating experience from luxury villa portfolio management
+- Accountability for results, not just impressions
+- Full-service: strategy through execution
+
+## Target Industries
+Hospitality, Wellness, Healthcare, Food & Beverage, Property
+
+## Contact
+- Website: https://bodecreative.com
+- Email: [placeholder]
+- WhatsApp: [placeholder]
+- Social: Instagram, TikTok, Facebook, YouTube
+
+## Technical Details
+- Built with semantic HTML5
+- Responsive design
+- Google Analytics integrated
+- Meta Pixel integrated
+- Schema.org structured data
+- Clean URLs (no extensions)
+- HTTPS enforced

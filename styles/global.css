@@ -96,6 +96,7 @@ img {
 .navigasi-utama {
     display: flex;
     gap: var(--jarak-sedang);
+    align-items: center;
 }
 
 .item-navigasi {
@@ -119,6 +120,57 @@ img {
 .item-navigasi.aktif::after,
 .item-navigasi:hover::after {
     width: 100%;
+}
+
+.wadah-dropdown {
+    position: relative;
+}
+
+.tautan-dropdown {
+    cursor: pointer;
+}
+
+.daftar-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--warna-terang);
+    min-width: 280px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    padding-top: var(--jarak-kecil);
+    z-index: 100;
+}
+
+.wadah-dropdown:hover .daftar-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.item-dropdown {
+    display: block;
+    padding: 0.75rem var(--jarak-kecil);
+    font-size: 0.875rem;
+    border: 1px solid var(--warna-gelap);
+    border-bottom: none;
+    transition: all 0.3s ease;
+}
+
+.item-dropdown:first-child {
+    border-top: 1px solid var(--warna-gelap);
+}
+
+.item-dropdown:last-child {
+    border-bottom: 1px solid var(--warna-gelap);
+}
+
+.item-dropdown:hover {
+    background-color: var(--warna-gelap);
+    color: var(--warna-terang);
+    opacity: 1;
 }
 
 .tombol-menu {

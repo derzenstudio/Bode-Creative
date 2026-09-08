@@ -1,0 +1,211 @@
+# Bode Creative - Full LLM Optimization File
+
+## Site Overview
+Bode Creative is a business consultancy and marketing solutions company based in Bali, Indonesia, operating as a division of the Bode Group. We provide embedded marketing and operations teams for small and mid-sized businesses without the overhead of building one internally.
+
+## Company Information
+- **Name:** Bode Creative
+- **Parent Company:** Bode Group
+- **Location:** Bali, Indonesia
+- **Founder:** Lisa Sibley
+- **Launch Date:** [Placeholder]
+- **Business Model:** Embedded department model (not traditional agency)
+
+## Services Breakdown
+
+### Marketing & Social Media
+- Strategy development
+- Daily content production
+- Account administration
+- Paid advertising across Meta and Google
+- Performance tracking and optimization
+
+### Digital & Web
+- Website design, build and maintenance
+- Search engine optimisation (SEO)
+- Analytics setup and monitoring
+- Google Business management
+- Technical SEO implementation
+
+### Creative Production
+- In-house photography
+- Videography
+- Graphic design
+- Content creation
+- Brand visual identity
+
+### Operational & Business Support
+- Systems and process design
+- Reporting frameworks
+- Commercial decision consultancy
+- Revenue optimization
+- Distribution channel management
+
+## Key Differentiators
+
+1. **Operating Experience, Not Agency Theory**
+   - Team trained while running luxury villa portfolio in Bali
+   - Managed distribution across major booking platforms
+   - Built direct-booking systems
+   - Handled guest conversion and operational reporting
+   - Responsible for revenue, not impressions
+
+2. **Embedded Team Model**
+   - Marketing manager
+   - Photographer and videographer
+   - Web and graphics specialist
+   - Content team
+   - Works as client's own staff would
+
+3. **Accountability Focus**
+   - Not selling deliverables by the piece
+   - Consistent month-after-month execution
+   - Accountable for results (enquiries, conversions, cost efficiency)
+   - Different from advice-only consultants
+
+## Target Industries
+- Hospitality
+- Wellness
+- Healthcare
+- Food & Beverage
+- Property/Real Estate
+
+## Market Gap Addressed
+Bali's professional services market has:
+- Many agencies that post content
+- Many consultants who deliver strategy documents
+- Few who take responsibility for execution between strategy and results
+
+## Founder Quote
+"Most businesses here are not short of advice. They are short of people who will actually do the work, consistently, month after month, and stay accountable for whether it produces anything." - Lisa Sibley
+
+## Service Philosophy
+"A business owner does not need twelve reels a month. They need more enquiries, converted better, at a lower cost than they are paying now. That is a different job, and it needs a different kind of team."
+
+## Contact Information
+- **Website:** https://bodecreative.com
+- **Email:** [placeholder@bodecreative.com]
+- **WhatsApp:** [placeholder number]
+- **Social Media:**
+  - Instagram: https://instagram.com/bodecreative (placeholder)
+  - TikTok: https://tiktok.com/@bodecreative (placeholder)
+  - Facebook: https://facebook.com/bodecreative (placeholder)
+  - YouTube: https://youtube.com/@bodecreative (placeholder)
+
+## Technical Implementation Details
+
+### Architecture
+- Semantic HTML5 structure
+- Vanilla CSS with custom properties
+- Vanilla JavaScript with anime.js for animations
+- PHP backend for form submission
+- Apache server with .htaccess URL rewriting
+
+### Design System
+- **Colors:**
+  - Primary Dark: #17160f
+  - Primary Bright: #f5f2e9
+  - Accent: #ab3a20
+- **Typography:**
+  - Headings: Cormorant Garamond
+  - Body: Space Grotesk
+  - Logo subtext: Poppins Semi Bold ("CREATIVE")
+- **Design Principles:**
+  - No rounded borders (max 3px, min 1px)
+  - Generous breathing space
+  - Single letters as decorative elements
+  - Each page unique layout maintaining identity
+
+### Performance Features
+- Page-specific CSS loading
+- Page-specific JavaScript loading
+- Image optimization placeholders
+- Compression enabled via .htaccess
+- Browser caching configured
+
+### SEO Implementation
+- Schema.org structured data (LocalBusiness, ProfessionalService)
+- Meta descriptions on all pages
+- Open Graph tags
+- Twitter Card tags
+- Canonical URLs
+- Clean URLs (no .html or .php extensions)
+- HTTPS enforced
+- XML sitemap
+- robots.txt configured
+
+### Analytics & Tracking
+- Google Analytics 4 (placeholder ID)
+- Meta Pixel (placeholder ID)
+- Event tracking for form submissions
+- WhatsApp click tracking
+
+### Accessibility
+- Semantic HTML structure
+- ARIA labels where needed
+- Keyboard navigation support
+- Color contrast compliance
+- Responsive design for all devices
+
+### Security
+- X-Content-Type-Options header
+- X-Frame-Options header
+- X-XSS-Protection header
+- Directory listing disabled
+- Input sanitization in form handler
+
+## Content Strategy
+- De-AI copy (no overused cadences, formulas, triads)
+- No em-dashes
+- English content throughout
+- Gen Z Indonesian slang for code identifiers only
+
+## File Structure
+```
+/
+├── index.html (Home)
+├── best-at/ (directory for service pages)
+│   ├── marketing-social-media.html
+│   ├── digital-web.html
+│   ├── creative-production.html
+│   └── operational-business-support.html
+├── about.html
+├── contact.html
+├── submit.php (form handler)
+├── styles/
+│   ├── global.css
+│   ├── home.css
+│   ├── best-at.css
+│   ├── about.css
+│   ├── contact.css
+│   └── service-detail.css
+├── scripts/
+│   ├── global.js
+│   ├── home.js
+│   ├── best-at.js
+│   ├── about.js
+│   ├── contact.js
+│   └── service-detail.js
+├── assets/
+│   ├── logo.png
+│   ├── og-image.jpg
+│   └── [service-specific images]
+├── .htaccess
+├── robots.txt
+├── llms.txt
+├── full-llms.txt
+└── sitemap.xml
+```
+
+## Navigation Structure
+- Home
+- Best at (dropdown menu):
+  - Marketing & Social Media
+  - Digital & Web
+  - Creative Production
+  - Operational & Business Support
+- About
+- Contact
+
+## Capacity Note
+Capacity deliberately limited to protect service quality. Accepting new clients from [placeholder date].

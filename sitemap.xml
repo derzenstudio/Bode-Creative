@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://bodecreative.com/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://bodecreative.com/assets/og-image.jpg</image:loc>
+      <image:title>Bode Creative Hero Image</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bodecreative.com/best-at/marketing-social-media</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bodecreative.com/assets/marketing-placeholder.jpg</image:loc>
+      <image:title>Marketing and Social Media Services</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bodecreative.com/best-at/digital-web</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bodecreative.com/assets/digital-placeholder.jpg</image:loc>
+      <image:title>Digital and Web Services</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bodecreative.com/best-at/creative-production</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bodecreative.com/assets/creative-placeholder.jpg</image:loc>
+      <image:title>Creative Production Services</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bodecreative.com/best-at/operational-business-support</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bodecreative.com/assets/operational-placeholder.jpg</image:loc>
+      <image:title>Operational and Business Support Services</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bodecreative.com/about</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://bodecreative.com/assets/about-hero-placeholder.jpg</image:loc>
+      <image:title>About Bode Creative</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bodecreative.com/contact</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>

@@ -1,0 +1,185 @@
+.bagian-judul-layanan {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--jarak-besar) var(--jarak-sedang);
+    position: relative;
+}
+
+.judul-layanan-utama {
+    font-size: clamp(3rem, 8vw, 6rem);
+    margin-bottom: var(--jarak-kecil);
+    max-width: 900px;
+}
+
+.subjudul-layanan {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    max-width: 600px;
+    opacity: 0.8;
+    line-height: 1.7;
+}
+
+.bagian-detail-layanan {
+    padding: var(--jarak-besar) var(--jarak-sedang);
+}
+
+.wadah-konten-detail {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-detail-dual {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--jarak-besar);
+    align-items: start;
+}
+
+.kolom-teks {
+    padding: var(--jarak-sedang);
+}
+
+.kolom-gambar {
+    position: relative;
+}
+
+.gambar-layanan {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    border: 1px solid var(--warna-gelap);
+}
+
+.daftar-layanan {
+    list-style: none;
+    margin-top: var(--jarak-sedang);
+}
+
+.item-daftar {
+    display: flex;
+    gap: var(--jarak-kecil);
+    margin-bottom: var(--jarak-sedang);
+    padding-bottom: var(--jarak-sedang);
+    border-bottom: 1px solid rgba(23, 22, 15, 0.2);
+}
+
+.item-daftar:last-child {
+    border-bottom: none;
+}
+
+.penanda-daftar {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.875rem;
+    color: var(--warna-aksen);
+    flex-shrink: 0;
+    padding-top: 0.25rem;
+}
+
+.isi-daftar {
+    flex: 1;
+}
+
+.judul-item {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.deskripsi-item {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    opacity: 0.8;
+}
+
+.bagian-pendekatan {
+    padding: var(--jarak-besar) var(--jarak-sedang);
+    background-color: var(--warna-gelap);
+    color: var(--warna-terang);
+    position: relative;
+}
+
+.wadah-konten-pendekatan {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.teks-pendekatan {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    line-height: 1.8;
+    margin-bottom: var(--jarak-sedang);
+    opacity: 0.9;
+}
+
+.teks-pendekatan:last-child {
+    margin-bottom: 0;
+}
+
+.bagian-pendekatan .elemen-dekoratif {
+    color: var(--warna-aksen);
+    opacity: 0.2;
+}
+
+.bagian-pendekatan .judul-sub-bagian {
+    color: var(--warna-terang);
+}
+
+.bagian-ajakan-layanan {
+    padding: var(--jarak-besar) var(--jarak-sedang);
+    text-align: center;
+    position: relative;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.judul-ajakan {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: var(--jarak-sedang);
+    max-width: 700px;
+}
+
+@media (max-width: 900px) {
+    .grid-detail-dual {
+        grid-template-columns: 1fr;
+        gap: var(--jarak-sedang);
+    }
+
+    .kolom-gambar {
+        order: -1;
+    }
+
+    .gambar-layanan {
+        aspect-ratio: 16/9;
+    }
+}
+
+@media (max-width: 768px) {
+    .bagian-judul-layanan {
+        min-height: 50vh;
+    }
+
+    .judul-layanan-utama {
+        font-size: clamp(2rem, 6vw, 4rem);
+    }
+
+    .subjudul-layanan {
+        font-size: clamp(1rem, 1.5vw, 1.25rem);
+    }
+
+    .item-daftar {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .penanda-daftar {
+        padding-top: 0;
+    }
+}
