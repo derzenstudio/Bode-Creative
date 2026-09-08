@@ -1,0 +1,248 @@
+.bagian-formulir {
+    padding: var(--jarak-besar) var(--jarak-sedang);
+}
+
+.wadah-konten-formulir {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.huruf-kecil {
+    top: 0;
+    right: var(--jarak-sedang);
+}
+
+.grid-formulir {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--jarak-besar);
+}
+
+.kolom-info {
+    padding-right: var(--jarak-sedang);
+}
+
+.judul-info {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: var(--jarak-kecil);
+}
+
+.teks-info {
+    font-size: 1rem;
+    line-height: 1.8;
+    opacity: 0.8;
+    margin-bottom: var(--jarak-sedang);
+}
+
+.wadah-kontak-langsung {
+    display: flex;
+    flex-direction: column;
+    gap: var(--jarak-kecil);
+}
+
+.item-kontak {
+    padding: var(--jarak-kecil) 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.label-kontak {
+    font-size: 0.75rem;
+    opacity: 0.6;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.tautan-kontak {
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.tautan-kontak:hover {
+    color: var(--warna-aksen);
+    opacity: 1;
+}
+
+.teks-kontak {
+    font-size: 1rem;
+}
+
+.formulir-kontak {
+    display: flex;
+    flex-direction: column;
+    gap: var(--jarak-kecil);
+}
+
+.grup-input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.label-input {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.input-teks {
+    width: 100%;
+    padding: 1rem;
+    background-color: transparent;
+    border: 1px solid var(--warna-gelap);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    color: var(--warna-gelap);
+    transition: border-color 0.3s ease;
+}
+
+.input-teks:focus {
+    outline: none;
+    border-color: var(--warna-aksen);
+}
+
+.input-teks::placeholder {
+    opacity: 0.5;
+}
+
+.area-teks {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.wadah-pilihan {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.kotak-centang {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    padding: 0.75rem;
+    border: 1px solid var(--warna-gelap);
+    transition: all 0.3s ease;
+}
+
+.kotak-centang:hover {
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+.input-centang {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--warna-aksen);
+    cursor: pointer;
+}
+
+.teks-centang {
+    font-size: 0.9375rem;
+}
+
+.wadah-tombol-form {
+    display: flex;
+    gap: var(--jarak-kecil);
+    margin-top: var(--jarak-kecil);
+}
+
+.tombol-kirim {
+    flex: 1;
+    padding: 1rem 2rem;
+    background-color: var(--warna-gelap);
+    color: var(--warna-terang);
+    border: 1px solid var(--warna-gelap);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tombol-kirim:hover {
+    background-color: transparent;
+    color: var(--warna-gelap);
+}
+
+.tombol-wa {
+    flex: 1;
+    padding: 1rem 2rem;
+    background-color: #25D366;
+    color: #fff;
+    border: 1px solid #25D366;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.875rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.tombol-wa:hover {
+    background-color: #128C7E;
+    border-color: #128C7E;
+    opacity: 1;
+}
+
+.status-form {
+    padding: 1rem;
+    margin-top: var(--jarak-kecil);
+    font-size: 0.875rem;
+    display: none;
+}
+
+.status-form.sukses {
+    display: block;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.status-form.gagal {
+    display: block;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.bagian-catatan {
+    padding: var(--jarak-besar) var(--jarak-sedang);
+    background-color: var(--warna-gelap);
+    color: var(--warna-terang);
+    text-align: center;
+}
+
+.wadah-konten-catatan {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.huruf-kecil {
+    position: static;
+    margin-bottom: var(--jarak-kecil);
+    display: block;
+}
+
+.teks-catatan {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .grid-formulir {
+        grid-template-columns: 1fr;
+    }
+
+    .kolom-info {
+        padding-right: 0;
+        order: 2;
+    }
+
+    .wadah-tombol-form {
+        flex-direction: column;
+    }
+
+    .huruf-kecil {
+        display: none;
+    }
+}

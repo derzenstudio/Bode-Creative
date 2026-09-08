@@ -1,0 +1,264 @@
+.bagian-cerita {
+    padding: var(--jarak-besar) var(--jarak-sedang);
+}
+
+.wadah-konten-cerita {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.huruf-kecil {
+    top: 0;
+    left: var(--jarak-sedang);
+}
+
+.grid-cerita {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--jarak-besar);
+    align-items: center;
+}
+
+.kolom-teks {
+    padding-right: var(--jarak-sedang);
+}
+
+.paragraf-besar {
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
+    line-height: 1.8;
+    margin-bottom: var(--jarak-kecil);
+}
+
+.paragraf {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: var(--jarak-kecil);
+    opacity: 0.8;
+}
+
+.kolom-gambar {
+    width: 100%;
+}
+
+.wadah-gambar-tempat.besar {
+    width: 100%;
+    aspect-ratio: 4/5;
+    background-color: rgba(128, 128, 128, 0.2);
+    border: 1px solid var(--warna-gelap);
+    overflow: hidden;
+}
+
+.gambar-cerita {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.bagian-kutipan {
+    padding: var(--jarak-besar) var(--jarak-sedang);
+    background-color: var(--warna-gelap);
+    color: var(--warna-terang);
+    position: relative;
+}
+
+.wadah-kutipan {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.huruf-besar {
+    top: var(--jarak-sedang);
+    left: var(--jarak-sedang);
+    opacity: 0.2;
+}
+
+.kutipan-besar {
+    margin-bottom: var(--jarak-sedang);
+}
+
+.teks-kutipan {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.penulis-kutipan {
+    font-size: 0.875rem;
+    opacity: 0.7;
+}
+
+.bagian-model {
+    padding: var(--jarak-besar) var(--jarak-sedang);
+    position: relative;
+}
+
+.wadah-konten-model {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.huruf-kecil {
+    top: 0;
+    right: var(--jarak-sedang);
+}
+
+.grid-model {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--jarak-sedang);
+}
+
+.kartu-model {
+    padding: var(--jarak-sedang);
+    border: 1px solid var(--warna-gelap);
+}
+
+.kartu-model.sorotan {
+    background-color: var(--warna-aksen);
+    color: var(--warna-terang);
+    border-color: var(--warna-aksen);
+}
+
+.teks-kartu-model {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.bagian-tim {
+    padding: var(--jarak-besar) var(--jarak-sedang);
+    position: relative;
+}
+
+.wadah-konten-tim {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.huruf-kecil {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.teks-tim {
+    font-size: 1.125rem;
+    margin-bottom: var(--jarak-sedang);
+    max-width: 600px;
+}
+
+.grid-tim {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--jarak-kecil);
+}
+
+.kartu-tim {
+    padding: var(--jarak-sedang);
+    border: 1px solid var(--warna-gelap);
+    text-align: center;
+}
+
+.nomor-tim {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.75rem;
+    opacity: 0.5;
+    display: block;
+    margin-bottom: var(--jarak-kecil);
+}
+
+.judul-peran {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.deskripsi-peran {
+    font-size: 0.875rem;
+    opacity: 0.7;
+}
+
+.bagian-latar {
+    padding: var(--jarak-besar) var(--jarak-sedang);
+    background-color: var(--warna-gelap);
+    color: var(--warna-terang);
+    position: relative;
+}
+
+.wadah-konten-latar {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.huruf-besar {
+    top: var(--jarak-sedang);
+    right: var(--jarak-sedang);
+    opacity: 0.2;
+}
+
+.teks-latar {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: var(--jarak-kecil);
+    opacity: 0.9;
+}
+
+.wadah-industri {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--jarak-kecil);
+    margin-top: var(--jarak-sedang);
+}
+
+.chip-industri {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--warna-terang);
+    font-size: 0.875rem;
+}
+
+.bagian-info-perusahaan {
+    padding: var(--jarak-besar) var(--jarak-sedang);
+    position: relative;
+}
+
+.wadah-konten-info {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.huruf-kecil {
+    top: 0;
+    left: var(--jarak-sedang);
+}
+
+.teks-info {
+    font-size: 1rem;
+    line-height: 1.8;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .grid-cerita {
+        grid-template-columns: 1fr;
+    }
+
+    .kolom-teks {
+        padding-right: 0;
+        order: 2;
+    }
+
+    .kolom-gambar {
+        order: 1;
+    }
+
+    .huruf-kecil,
+    .huruf-besar {
+        display: none;
+    }
+
+    .grid-model,
+    .grid-tim {
+        grid-template-columns: 1fr;
+    }
+}
