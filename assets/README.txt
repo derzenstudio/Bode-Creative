@@ -1,0 +1,1 @@
+Placeholder images folder - add your images here: marketing-placeholder.jpg, digital-placeholder.jpg, creative-placeholder.jpg, operational-placeholder.jpg, about-hero-placeholder.jpg, logo.png, og-image.jpg

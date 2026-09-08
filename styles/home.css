@@ -1,0 +1,244 @@
+.bagian-pahlawan {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--jarak-besar) var(--jarak-sedang);
+    position: relative;
+}
+
+.huruf-besar {
+    top: var(--jarak-sedang);
+    left: var(--jarak-sedang);
+}
+
+.judul-pahlawan {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    margin-bottom: var(--jarak-sedang);
+    max-width: 900px;
+}
+
+.baris-judul {
+    display: block;
+}
+
+.aksen-merah {
+    color: var(--warna-aksen);
+}
+
+.subjudul-pahlawan {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    max-width: 600px;
+    margin-bottom: var(--jarak-sedang);
+    opacity: 0.8;
+}
+
+.wadah-tombol-pahlawan {
+    display: flex;
+    gap: var(--jarak-kecil);
+    flex-wrap: wrap;
+}
+
+.bagian-gap {
+    padding: var(--jarak-besar) var(--jarak-sedang);
+    position: relative;
+}
+
+.wadah-konten-gap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.huruf-kecil {
+    top: 0;
+    right: var(--jarak-sedang);
+}
+
+.grid-gap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--jarak-sedang);
+}
+
+.kartu-gap {
+    padding: var(--jarak-sedang);
+    border: 1px solid var(--warna-gelap);
+}
+
+.kartu-gap.sorotan {
+    background-color: var(--warna-gelap);
+    color: var(--warna-terang);
+}
+
+.teks-kartu-gap {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: var(--jarak-kecil);
+}
+
+.kutipan-penulis {
+    font-style: italic;
+    font-size: 0.875rem;
+    opacity: 0.7;
+}
+
+.bagian-layanan-ikhtisar {
+    padding: var(--jarak-besar) var(--jarak-sedang);
+    position: relative;
+}
+
+.huruf-besar {
+    bottom: var(--jarak-sedang);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.grid-layanan-ikhtisar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--jarak-kecil);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.kartu-layanan-ikhtisar {
+    padding: var(--jarak-sedang);
+    border: 1px solid var(--warna-gelap);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.kartu-layanan-ikhtisar:hover {
+    background-color: var(--warna-gelap);
+    color: var(--warna-terang);
+    opacity: 1;
+}
+
+.nomor-layanan {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.75rem;
+    opacity: 0.5;
+    margin-bottom: var(--jarak-kecil);
+    display: block;
+}
+
+.judul-layanan {
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    margin-bottom: var(--jarak-kecil);
+}
+
+.deskripsi-layanan {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.bagian-pengalaman {
+    padding: var(--jarak-besar) var(--jarak-sedang);
+    position: relative;
+}
+
+.wadah-konten-pengalaman {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.huruf-kecil {
+    top: 0;
+    left: var(--jarak-sedang);
+}
+
+.teks-pengalaman {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    line-height: 1.8;
+    max-width: 800px;
+    margin-bottom: var(--jarak-sedang);
+}
+
+.wadah-statistik {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--jarak-kecil);
+}
+
+.statistik-item {
+    display: flex;
+    flex-direction: column;
+    padding: var(--jarak-kecil) var(--jarak-sedang);
+    border: 1px solid var(--warna-gelap);
+    min-width: 150px;
+}
+
+.angka-statistik {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.label-statistik {
+    font-size: 0.75rem;
+    opacity: 0.6;
+    margin-top: 0.25rem;
+}
+
+.bagian-ajakan {
+    padding: var(--jarak-besar) var(--jarak-sedang);
+    text-align: center;
+    position: relative;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.huruf-besar {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+}
+
+.judul-ajakan {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: var(--jarak-kecil);
+    max-width: 800px;
+}
+
+.teks-ajakan {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-bottom: var(--jarak-sedang);
+}
+
+@media (max-width: 768px) {
+    .bagian-pahlawan {
+        min-height: auto;
+        padding-top: var(--jarak-besar);
+    }
+
+    .huruf-besar,
+    .huruf-kecil {
+        display: none;
+    }
+
+    .wadah-tombol-pahlawan {
+        flex-direction: column;
+    }
+
+    .tombol-utama,
+    .tombol-sekunder {
+        width: 100%;
+        text-align: center;
+    }
+
+    .grid-gap,
+    .grid-layanan-ikhtisar {
+        grid-template-columns: 1fr;
+    }
+
+    .wadah-statistik {
+        justify-content: center;
+    }
+}
